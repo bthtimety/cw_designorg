@@ -1,0 +1,945 @@
+{\rtf1\ansi\ansicpg1251\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset204\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset204\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset204\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\info 
+{\title {\comment My Project  {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+1.0 \par
+}}My Project}
+{\comment \'D1\'EE\'E7\'E4\'E0\'ED\'EE \'F1\'E8\'F1\'F2\'E5\'EC\'EE\'E9 doxygen 1.9.7.}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt My Project}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+\'C2\'E5\'F0\'F1\'E8\'FF 1.0\par\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \'CE\'E3\'EB\'E0\'E2\'EB\'E5\'ED\'E8\'E5\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC \'EF\'F0\'EE\'F1\'F2\'F0\'E0\'ED\'F1\'F2\'E2 \'E8\'EC\'E5\'ED\par \pard\plain 
+{\tc \v \'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC \'EF\'F0\'EE\'F1\'F2\'F0\'E0\'ED\'F1\'F2\'E2 \'E8\'EC\'E5\'ED}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'CF\'F0\'EE\'F1\'F2\'F0\'E0\'ED\'F1\'F2\'E2\'E0 \'E8\'EC\'E5\'ED\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'CF\'EE\'EB\'ED\'FB\'E9 \'F1\'EF\'E8\'F1\'EE\'EA \'E4\'EE\'EA\'F3\'EC\'E5\'ED\'F2\'E8\'F0\'EE\'E2\'E0\'ED\'ED\'FB\'F5 \'EF\'F0\'EE\'F1\'F2\'F0\'E0\'ED\'F1\'F2\'E2 \'E8\'EC\'E5\'ED.}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 Ui}}}
+ ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C7\'E0\'E3\'EE\'EB\'EE\'E2\'EE\'F7\'ED\'FB\'E9 \'F4\'E0\'E9\'EB \'F1 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'E5\'EC \'EA\'EB\'E0\'F1\'F1\'E0 {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAC" }{}}{\fldrslt {\cs37\ul\cf2 dialogDelete}}} })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAB \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'C8\'E5\'F0\'E0\'F0\'F5\'E8\'F7\'E5\'F1\'EA\'E8\'E9 \'F1\'EF\'E8\'F1\'EE\'EA \'EA\'EB\'E0\'F1\'F1\'EE\'E2\par \pard\plain 
+{\tc \v \'C8\'E5\'F0\'E0\'F0\'F5\'E8\'F7\'E5\'F1\'EA\'E8\'E9 \'F1\'EF\'E8\'F1\'EE\'EA \'EA\'EB\'E0\'F1\'F1\'EE\'E2}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'C8\'E5\'F0\'E0\'F0\'F5\'E8\'FF \'EA\'EB\'E0\'F1\'F1\'EE\'E2\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'C8\'E5\'F0\'E0\'F0\'F5\'E8\'FF \'EA\'EB\'E0\'F1\'F1\'EE\'E2.}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+QDialog
+{
+\par
+\pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+dialogDelete\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+dialogEdit\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+dialogRedaction\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAK \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+QMainWindow
+{
+\par
+\pard\plain \s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+MainWindow\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAP \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC \'EA\'EB\'E0\'F1\'F1\'EE\'E2\par \pard\plain 
+{\tc \v \'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC \'EA\'EB\'E0\'F1\'F1\'EE\'E2}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'CA\'EB\'E0\'F1\'F1\'FB\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'CA\'EB\'E0\'F1\'F1\'FB \'F1 \'E8\'F5 \'EA\'F0\'E0\'F2\'EA\'E8\'EC \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'E5\'EC.}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAC" }{}}{\fldrslt {\cs37\ul\cf2 dialogDelete}}}
+ ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+\'EA\'EB\'E0\'F1\'F1 \'E2\'FB\'E2\'EE\'E4\'E0 \'E4\'E8\'E0\'EB\'EE\'E3\'EE\'E2\'EE\'E3\'EE \'EE\'EA\'ED\'E0 \'E4\'EB\'FF \'E2\'FB\'E1\'EE\'F0\'E0 \'F3\'E4\'E0\'EB\'FF\'E5\'EC\'EE\'E9 \'E7\'E0\'EF\'E8\'F1\'E8 \par}
+\par
+})} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 dialogEdit}}}
+ ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+\'EA\'EB\'E0\'F1\'F1 \'E4\'E8\'E0\'EB\'EE\'E3\'EE\'E2\'EE\'E3\'EE \'EE\'EA\'ED\'E0 \'E4\'EB\'FF \'E2\'FB\'E1\'EE\'F0\'E0 \'E8\'E7\'EC\'E5\'ED\'FF\'E5\'EC\'EE\'E9 \'E7\'E0\'EF\'E8\'F1\'E8 \par}
+\par
+})} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 dialogRedaction}}}
+ ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+\'EA\'EB\'E0\'F1\'F1 \'E4\'E8\'E0\'EB\'EE\'E3\'EE\'E2\'EE\'E3\'EE \'EE\'EA\'ED\'E0 \'E4\'EB\'FF \'E4\'EE\'E1\'E0\'E2\'EB\'E5\'ED\'E8\'FF \'E8\'EB\'E8 \'E8\'E7\'EC\'E5\'ED\'E5\'ED\'E8\'FF \'E7\'E0\'EF\'E8\'F1\'E8 \par}
+\par
+})} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAK \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow}}}
+ ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+\'EA\'EB\'E0\'F1\'F1 \'E4\'EB\'FF \'EE\'F2\'EE\'E1\'F0\'E0\'E6\'E5\'ED\'E8\'FF \'E3\'EB\'E0\'E2\'ED\'EE\'E3\'EE \'EE\'EA\'ED\'E0 \par}
+\par
+})} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAP \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'D1\'EF\'E8\'F1\'EE\'EA \'F4\'E0\'E9\'EB\'EE\'E2\par \pard\plain 
+{\tc \v \'D1\'EF\'E8\'F1\'EE\'EA \'F4\'E0\'E9\'EB\'EE\'E2}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB\'FB\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'CF\'EE\'EB\'ED\'FB\'E9 \'F1\'EF\'E8\'F1\'EE\'EA \'E4\'EE\'EA\'F3\'EC\'E5\'ED\'F2\'E8\'F0\'EE\'E2\'E0\'ED\'ED\'FB\'F5 \'F4\'E0\'E9\'EB\'EE\'E2.}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAA" }{}}{\fldrslt {\cs37\ul\cf2 dialogdelete.h}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAF" }{}}{\fldrslt {\cs37\ul\cf2 dialogedit.h}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAJ" }{}}{\fldrslt {\cs37\ul\cf2 dialogredaction.h}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAJ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAO" }{}}{\fldrslt {\cs37\ul\cf2 mainwindow.h}}}
+ } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAO \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'CF\'F0\'EE\'F1\'F2\'F0\'E0\'ED\'F1\'F2\'E2\'E0 \'E8\'EC\'E5\'ED\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'CF\'F0\'EE\'F1\'F2\'F0\'E0\'ED\'F1\'F2\'E2\'EE \'E8\'EC\'E5\'ED Ui\par \pard\plain 
+{\tc\tcl2 \v Ui}
+{\xe \v Ui}
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C7\'E0\'E3\'EE\'EB\'EE\'E2\'EE\'F7\'ED\'FB\'E9 \'F4\'E0\'E9\'EB \'F1 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'E5\'EC \'EA\'EB\'E0\'F1\'F1\'E0 {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAC" }{}}{\fldrslt {\cs37\ul\cf2 dialogDelete}}}. }}\par
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'EE\'E4\'F0\'EE\'E1\'ED\'EE\'E5 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'E5\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C7\'E0\'E3\'EE\'EB\'EE\'E2\'EE\'F7\'ED\'FB\'E9 \'F4\'E0\'E9\'EB \'F1 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'E5\'EC \'EA\'EB\'E0\'F1\'F1\'E0 {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAC" }{}}{\fldrslt {\cs37\ul\cf2 dialogDelete}}}. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C7\'E0\'E3\'EE\'EB\'EE\'E2\'EE\'F7\'ED\'FB\'E9 \'F4\'E0\'E9\'EB \'F1 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'E5\'EC \'EA\'EB\'E0\'F1\'F1\'E0 {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow}}}.\par
+\'C7\'E0\'E3\'EE\'EB\'EE\'E2\'EE\'F7\'ED\'FB\'E9 \'F4\'E0\'E9\'EB \'F1 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'E5\'EC \'EA\'EB\'E0\'F1\'F1\'E0 {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 dialogRedaction}}}.\par
+\'C7\'E0\'E3\'EE\'EB\'EE\'E2\'EE\'F7\'ED\'FB\'E9 \'F4\'E0\'E9\'EB \'F1 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'E5\'EC \'EA\'EB\'E0\'F1\'F1\'E0 {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 dialogEdit}}}.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'E2\'F2\'EE\'F0\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+\'C7\'E0\'E9\'F6\'E5\'E2\'E0 \'C0. \'C0. \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C2\'E5\'F0\'F1\'E8\'FF\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+1.0 \par
+}}}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'CA\'EB\'E0\'F1\'F1\'FB{\tc \v \'CA\'EB\'E0\'F1\'F1\'FB}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'CA\'EB\'E0\'F1\'F1 dialogDelete\par \pard\plain 
+{\tc\tcl2 \v dialogDelete}
+{\xe \v dialogDelete}
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAC" }{}}{\fldrslt {\cs37\ul\cf2 dialogDelete}}} class - \'EA\'EB\'E0\'F1\'F1 \'E2\'FB\'E2\'EE\'E4\'E0 \'E4\'E8\'E0\'EB\'EE\'E3\'EE\'E2\'EE\'E3\'EE \'EE\'EA\'ED\'E0 \'E4\'EB\'FF \'E2\'FB\'E1\'EE\'F0\'E0 \'F3\'E4\'E0\'EB\'FF\'E5\'EC\'EE\'E9 \'E7\'E0\'EF\'E8\'F1\'E8 }}\par
+{
+{\f2 #include <dialogdelete.h>}}\par
+\'C3\'F0\'E0\'F4 \'ED\'E0\'F1\'EB\'E5\'E4\'EE\'E2\'E0\'ED\'E8\'FF:dialogDelete:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classdialog_delete.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CE\'F2\'EA\'F0\'FB\'F2\'FB\'E5 \'F7\'EB\'E5\'ED\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAR" }{}}{\fldrslt {\cs37\ul\cf2 dialogDelete}}}
+ (QWidget *parent=nullptr)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAC" }{}}{\fldrslt {\cs37\ul\cf2 dialogDelete}}} - \'EA\'EE\'ED\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0 \'EA\'EB\'E0\'F1\'F1\'E0 }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b ~dialogDelete} (){\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAC" }{}}{\fldrslt {\cs37\ul\cf2 dialogDelete}}} - \'E4\'E5\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0 \'EA\'EB\'E0\'F1\'F1\'E0 }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAE" }{}}{\fldrslt {\cs37\ul\cf2 num}}}
+ ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+num - \'F4\'F3\'ED\'EA\'F6\'E8\'FF \'E4\'EB\'FF \'F1\'F7\'E8\'F2\'FB\'E2\'E0\'ED\'E8\'FF \'E7\'ED\'E0\'F7\'E5\'ED\'E8\'FF, \'E2\'E2\'E5\'E4\'E5\'ED\'ED\'EE\'E3\'EE \'EF\'EE\'EB\'FC\'E7\'EE\'E2\'E0\'F2\'E5\'EB\'E5\'EC }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'EE\'E4\'F0\'EE\'E1\'ED\'EE\'E5 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'E5\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAC" }{}}{\fldrslt {\cs37\ul\cf2 dialogDelete}}} class - \'EA\'EB\'E0\'F1\'F1 \'E2\'FB\'E2\'EE\'E4\'E0 \'E4\'E8\'E0\'EB\'EE\'E3\'EE\'E2\'EE\'E3\'EE \'EE\'EA\'ED\'E0 \'E4\'EB\'FF \'E2\'FB\'E1\'EE\'F0\'E0 \'F3\'E4\'E0\'EB\'FF\'E5\'EC\'EE\'E9 \'E7\'E0\'EF\'E8\'F1\'E8 \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CA\'EE\'ED\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0(\'FB)\par
+\pard\plain 
+{\xe \v dialogDelete\:dialogDelete}
+{\xe \v dialogDelete\:dialogDelete}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+dialogDelete::dialogDelete (QWidget *  {\i parent} = {\f2 nullptr}){\f2 [explicit]}}}
+\par
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAC" }{}}{\fldrslt {\cs37\ul\cf2 dialogDelete}}} - \'EA\'EE\'ED\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0 \'EA\'EB\'E0\'F1\'F1\'E0 }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i parent} \cell }{- \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC \'ED\'E0 \'F0\'EE\'E4\'E8\'F2\'E5\'EB\'FF \'EE\'E1\'FA\'E5\'EA\'F2\'E0 \cell }
+{\row }
+}
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CC\'E5\'F2\'EE\'E4\'FB\par
+\pard\plain 
+{\xe \v num\:dialogDelete}
+{\xe \v dialogDelete\:num}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int dialogDelete::num ()}}
+\par
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+num - \'F4\'F3\'ED\'EA\'F6\'E8\'FF \'E4\'EB\'FF \'F1\'F7\'E8\'F2\'FB\'E2\'E0\'ED\'E8\'FF \'E7\'ED\'E0\'F7\'E5\'ED\'E8\'FF, \'E2\'E2\'E5\'E4\'E5\'ED\'ED\'EE\'E3\'EE \'EF\'EE\'EB\'FC\'E7\'EE\'E2\'E0\'F2\'E5\'EB\'E5\'EC }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F9\'E0\'E5\'F2\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+\par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\'CE\'E1\'FA\'FF\'E2\'EB\'E5\'ED\'E8\'FF \'E8 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'FF \'F7\'EB\'E5\'ED\'EE\'E2 \'EA\'EB\'E0\'F1\'F1\'EE\'E2 \'ED\'E0\'F5\'EE\'E4\'FF\'F2\'F1\'FF \'E2 \'F4\'E0\'E9\'EB\'E0\'F5:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+dialogdelete.h\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+dialogdelete.cpp\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'CA\'EB\'E0\'F1\'F1 dialogEdit\par \pard\plain 
+{\tc\tcl2 \v dialogEdit}
+{\xe \v dialogEdit}
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 dialogEdit}}} class - \'EA\'EB\'E0\'F1\'F1 \'E4\'E8\'E0\'EB\'EE\'E3\'EE\'E2\'EE\'E3\'EE \'EE\'EA\'ED\'E0 \'E4\'EB\'FF \'E2\'FB\'E1\'EE\'F0\'E0 \'E8\'E7\'EC\'E5\'ED\'FF\'E5\'EC\'EE\'E9 \'E7\'E0\'EF\'E8\'F1\'E8 }}\par
+{
+{\f2 #include <dialogedit.h>}}\par
+\'C3\'F0\'E0\'F4 \'ED\'E0\'F1\'EB\'E5\'E4\'EE\'E2\'E0\'ED\'E8\'FF:dialogEdit:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classdialog_edit.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CE\'F2\'EA\'F0\'FB\'F2\'FB\'E5 \'F7\'EB\'E5\'ED\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAS" }{}}{\fldrslt {\cs37\ul\cf2 dialogEdit}}}
+ (QWidget *parent=nullptr)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 dialogEdit}}} - \'EA\'EE\'ED\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0 \'EA\'EB\'E0\'F1\'F1\'E0 }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b ~dialogEdit} (){\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 dialogEdit}}} - \'E4\'E5\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0 \'EA\'EB\'E0\'F1\'F1\'E0 }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAI" }{}}{\fldrslt {\cs37\ul\cf2 num}}}
+ ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+num - \'F4\'F3\'ED\'EA\'F6\'E8\'FF \'E4\'EB\'FF \'F1\'F7\'E8\'F2\'FB\'E2\'E0\'ED\'E8\'FF \'E7\'ED\'E0\'F7\'E5\'ED\'E8\'FF, \'E2\'E2\'E5\'E4\'E5\'ED\'ED\'EE\'E3\'EE \'EF\'EE\'EB\'FC\'E7\'EE\'E2\'E0\'F2\'E5\'EB\'E5\'EC }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'EE\'E4\'F0\'EE\'E1\'ED\'EE\'E5 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'E5\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 dialogEdit}}} class - \'EA\'EB\'E0\'F1\'F1 \'E4\'E8\'E0\'EB\'EE\'E3\'EE\'E2\'EE\'E3\'EE \'EE\'EA\'ED\'E0 \'E4\'EB\'FF \'E2\'FB\'E1\'EE\'F0\'E0 \'E8\'E7\'EC\'E5\'ED\'FF\'E5\'EC\'EE\'E9 \'E7\'E0\'EF\'E8\'F1\'E8 \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CA\'EE\'ED\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0(\'FB)\par
+\pard\plain 
+{\xe \v dialogEdit\:dialogEdit}
+{\xe \v dialogEdit\:dialogEdit}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+dialogEdit::dialogEdit (QWidget *  {\i parent} = {\f2 nullptr}){\f2 [explicit]}}}
+\par
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 dialogEdit}}} - \'EA\'EE\'ED\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0 \'EA\'EB\'E0\'F1\'F1\'E0 }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i parent} \cell }{\cell }
+{\row }
+}
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CC\'E5\'F2\'EE\'E4\'FB\par
+\pard\plain 
+{\xe \v num\:dialogEdit}
+{\xe \v dialogEdit\:num}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int dialogEdit::num ()}}
+\par
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+num - \'F4\'F3\'ED\'EA\'F6\'E8\'FF \'E4\'EB\'FF \'F1\'F7\'E8\'F2\'FB\'E2\'E0\'ED\'E8\'FF \'E7\'ED\'E0\'F7\'E5\'ED\'E8\'FF, \'E2\'E2\'E5\'E4\'E5\'ED\'ED\'EE\'E3\'EE \'EF\'EE\'EB\'FC\'E7\'EE\'E2\'E0\'F2\'E5\'EB\'E5\'EC }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C2\'EE\'E7\'E2\'F0\'E0\'F9\'E0\'E5\'F2\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+\par
+}}}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\'CE\'E1\'FA\'FF\'E2\'EB\'E5\'ED\'E8\'FF \'E8 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'FF \'F7\'EB\'E5\'ED\'EE\'E2 \'EA\'EB\'E0\'F1\'F1\'EE\'E2 \'ED\'E0\'F5\'EE\'E4\'FF\'F2\'F1\'FF \'E2 \'F4\'E0\'E9\'EB\'E0\'F5:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+dialogedit.h\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+dialogedit.cpp\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'CA\'EB\'E0\'F1\'F1 dialogRedaction\par \pard\plain 
+{\tc\tcl2 \v dialogRedaction}
+{\xe \v dialogRedaction}
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 dialogRedaction}}} class - \'EA\'EB\'E0\'F1\'F1 \'E4\'E8\'E0\'EB\'EE\'E3\'EE\'E2\'EE\'E3\'EE \'EE\'EA\'ED\'E0 \'E4\'EB\'FF \'E4\'EE\'E1\'E0\'E2\'EB\'E5\'ED\'E8\'FF \'E8\'EB\'E8 \'E8\'E7\'EC\'E5\'ED\'E5\'ED\'E8\'FF \'E7\'E0\'EF\'E8\'F1\'E8 }}\par
+{
+{\f2 #include <dialogredaction.h>}}\par
+\'C3\'F0\'E0\'F4 \'ED\'E0\'F1\'EB\'E5\'E4\'EE\'E2\'E0\'ED\'E8\'FF:dialogRedaction:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "classdialog_redaction.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CE\'F2\'EA\'F0\'FB\'F2\'FB\'E5 \'F7\'EB\'E5\'ED\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAT" }{}}{\fldrslt {\cs37\ul\cf2 dialogRedaction}}}
+ (QWidget *parent=nullptr)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 dialogRedaction}}} - \'EA\'EE\'ED\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0 \'EA\'EB\'E0\'F1\'F1\'E0 }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b ~dialogRedaction} (){\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 dialogRedaction}}} - \'E4\'E5\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0 \'EA\'EB\'E0\'F1\'F1\'E0 }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b getData} (QString &, QString &, QString &, QString &, QString &, QString &){\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+getData - \'F4\'F3\'ED\'EA\'F6\'E8\'FF \'E4\'EB\'FF \'F1\'F7\'E8\'F2\'FB\'E2\'E0\'ED\'E8\'FF \'E7\'ED\'E0\'F7\'E5\'ED\'E8\'E9, \'E2\'E2\'E5\'E4\'E5\'ED\'ED\'FB\'F5 \'EF\'EE\'EB\'FC\'E7\'EE\'E2\'E0\'F2\'E5\'EB\'E5\'EC }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b editLabel} (QString){\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+editLabel - \'F4\'F3\'ED\'EA\'F6\'E8\'FF \'F3\'F1\'F2\'E0\'ED\'EE\'E2\'EA\'E8 \'F2\'E5\'EA\'F1\'F2\'E0 \'E2 \'E7\'E0\'E2\'E8\'F1\'E8\'EC\'EE\'F1\'F2\'E8 \'EE\'F2 \'E2\'FB\'E1\'F0\'E0\'ED\'ED\'EE\'E9 \'F2\'E0\'E1\'EB\'E8\'F6\'FB }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'EE\'E4\'F0\'EE\'E1\'ED\'EE\'E5 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'E5\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 dialogRedaction}}} class - \'EA\'EB\'E0\'F1\'F1 \'E4\'E8\'E0\'EB\'EE\'E3\'EE\'E2\'EE\'E3\'EE \'EE\'EA\'ED\'E0 \'E4\'EB\'FF \'E4\'EE\'E1\'E0\'E2\'EB\'E5\'ED\'E8\'FF \'E8\'EB\'E8 \'E8\'E7\'EC\'E5\'ED\'E5\'ED\'E8\'FF \'E7\'E0\'EF\'E8\'F1\'E8 \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CA\'EE\'ED\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0(\'FB)\par
+\pard\plain 
+{\xe \v dialogRedaction\:dialogRedaction}
+{\xe \v dialogRedaction\:dialogRedaction}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+dialogRedaction::dialogRedaction (QWidget *  {\i parent} = {\f2 nullptr}){\f2 [explicit]}}}
+\par
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 dialogRedaction}}} - \'EA\'EE\'ED\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0 \'EA\'EB\'E0\'F1\'F1\'E0 }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i parent} \cell }{- \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC \'ED\'E0 \'F0\'EE\'E4\'E8\'F2\'E5\'EB\'FF \'EE\'E1\'FA\'E5\'EA\'F2\'E0 \cell }
+{\row }
+}
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\'CE\'E1\'FA\'FF\'E2\'EB\'E5\'ED\'E8\'FF \'E8 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'FF \'F7\'EB\'E5\'ED\'EE\'E2 \'EA\'EB\'E0\'F1\'F1\'EE\'E2 \'ED\'E0\'F5\'EE\'E4\'FF\'F2\'F1\'FF \'E2 \'F4\'E0\'E9\'EB\'E0\'F5:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+dialogredaction.h\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+dialogredaction.cpp\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'CA\'EB\'E0\'F1\'F1 MainWindow\par \pard\plain 
+{\tc\tcl2 \v MainWindow}
+{\xe \v MainWindow}
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow}}} class - \'EA\'EB\'E0\'F1\'F1 \'E4\'EB\'FF \'EE\'F2\'EE\'E1\'F0\'E0\'E6\'E5\'ED\'E8\'FF \'E3\'EB\'E0\'E2\'ED\'EE\'E3\'EE \'EE\'EA\'ED\'E0 }}\par
+{
+{\f2 #include <mainwindow.h>}}\par
+\'C3\'F0\'E0\'F4 \'ED\'E0\'F1\'EB\'E5\'E4\'EE\'E2\'E0\'ED\'E8\'FF:MainWindow:{
+\pard\plain 
+\par\pard \qc {\field\flddirty {\*\fldinst INCLUDEPICTURE "class_main_window.png" \\d \\*MERGEFORMAT}{\fldrslt IMAGE}}\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CE\'F2\'EA\'F0\'FB\'F2\'FB\'E5 \'F7\'EB\'E5\'ED\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAU" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow}}}
+ (QWidget *parent=nullptr)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow}}} - \'EA\'EE\'ED\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0 \'EA\'EB\'E0\'F1\'F1\'E0 }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b ~MainWindow} (){\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow}}} - \'E4\'E5\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0 \'EA\'EB\'E0\'F1\'F1\'E0 }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'EE\'E4\'F0\'EE\'E1\'ED\'EE\'E5 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'E5\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow}}} class - \'EA\'EB\'E0\'F1\'F1 \'E4\'EB\'FF \'EE\'F2\'EE\'E1\'F0\'E0\'E6\'E5\'ED\'E8\'FF \'E3\'EB\'E0\'E2\'ED\'EE\'E3\'EE \'EE\'EA\'ED\'E0 \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CA\'EE\'ED\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0(\'FB)\par
+\pard\plain 
+{\xe \v MainWindow\:MainWindow}
+{\xe \v MainWindow\:MainWindow}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+MainWindow::MainWindow (QWidget *  {\i parent} = {\f2 nullptr})}}
+\par
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow}}} - \'EA\'EE\'ED\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0 \'EA\'EB\'E0\'F1\'F1\'E0 }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i parent} \cell }{- \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC \'ED\'E0 \'F0\'EE\'E4\'E8\'F2\'E5\'EB\'FF \'EE\'E1\'FA\'E5\'EA\'F2\'E0 \cell }
+{\row }
+}
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\'CE\'E1\'FA\'FF\'E2\'EB\'E5\'ED\'E8\'FF \'E8 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'FF \'F7\'EB\'E5\'ED\'EE\'E2 \'EA\'EB\'E0\'F1\'F1\'EE\'E2 \'ED\'E0\'F5\'EE\'E4\'FF\'F2\'F1\'FF \'E2 \'F4\'E0\'E9\'EB\'E0\'F5:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+mainwindow.h\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+mainwindow.cpp\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'D4\'E0\'E9\'EB\'FB{\tc \v \'D4\'E0\'E9\'EB\'FB}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+dialogdelete.h\par \pard\plain 
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 \par
+8 {\cf21 #ifndef DIALOGDELETE_H}\par
+9 {\cf21 #define DIALOGDELETE_H}\par
+10 \par
+11 {\cf21 #include <QDialog>}\par
+12 \par
+13 {\cf17 namespace }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 Ui}}}
+ \{\par
+14 {\cf17 class }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAC" }{}}{\fldrslt {\cs37\ul\cf2 dialogDelete}}}
+;\par
+15 \}\par
+19 {\cf17 class }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAC" }{}}{\fldrslt {\cs37\ul\cf2 dialogDelete}}}
+ : {\cf17 public} QDialog\par
+20 \{\par
+21     Q_OBJECT\par
+22 \par
+23 {\cf17 public}:\par
+28     {\cf17 explicit} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAC" }{}}{\fldrslt {\cs37\ul\cf2 dialogDelete}}}
+(QWidget *parent = {\cf17 nullptr});\par
+32     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAD" }{}}{\fldrslt {\cs37\ul\cf2 ~dialogDelete}}}
+();\par
+37     {\cf18 int} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAE" }{}}{\fldrslt {\cs37\ul\cf2 num}}}
+();\par
+38 \par
+39 {\cf17 private} slots:\par
+43     {\cf18 void} on_pushButtonOk_clicked();\par
+47     {\cf18 void} on_pushButtonCancel_clicked();\par
+48 \par
+49 {\cf17 private}:\par
+50     Ui::dialogDelete *ui;\par
+51 \};\par
+52 \par
+53 {\cf21 #endif }{\cf20 // DIALOGDELETE_H}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+dialogedit.h\par \pard\plain 
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 \par
+7 {\cf21 #ifndef DIALOGEDIT_H}\par
+8 {\cf21 #define DIALOGEDIT_H}\par
+9 \par
+10 {\cf21 #include <QDialog>}\par
+11 \par
+12 {\cf17 namespace }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 Ui}}}
+ \{\par
+13 {\cf17 class }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 dialogEdit}}}
+;\par
+14 \}\par
+15 \par
+19 {\cf17 class }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 dialogEdit}}}
+ : {\cf17 public} QDialog\par
+20 \{\par
+21     Q_OBJECT\par
+22 \par
+23 {\cf17 public}:\par
+28     {\cf17 explicit} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAG" }{}}{\fldrslt {\cs37\ul\cf2 dialogEdit}}}
+(QWidget *parent = {\cf17 nullptr});\par
+32     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAH" }{}}{\fldrslt {\cs37\ul\cf2 ~dialogEdit}}}
+();\par
+37      {\cf18 int} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAI" }{}}{\fldrslt {\cs37\ul\cf2 num}}}
+();\par
+38 \par
+39 {\cf17 private} slots:\par
+43      {\cf18 void} on_pushButtonOk_clicked();\par
+47      {\cf18 void} on_pushButtonCancel_clicked();\par
+48 \par
+49 {\cf17 private}:\par
+50     Ui::dialogEdit *ui;\par
+51 \};\par
+52 \par
+53 {\cf21 #endif }{\cf20 // DIALOGEDIT_H}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+dialogredaction.h\par \pard\plain 
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 \par
+7 {\cf21 #ifndef DIALOGREDACTION_H}\par
+8 {\cf21 #define DIALOGREDACTION_H}\par
+9 \par
+10 {\cf21 #include <QDialog>}\par
+11 \par
+12 {\cf17 namespace }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 Ui}}}
+ \{\par
+13 {\cf17 class }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 dialogRedaction}}}
+;\par
+14 \}\par
+15 \par
+19 {\cf17 class }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 dialogRedaction}}}
+ : {\cf17 public} QDialog\par
+20 \{\par
+21     Q_OBJECT\par
+22 \par
+23 {\cf17 public}:\par
+28     {\cf17 explicit} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAK" }{}}{\fldrslt {\cs37\ul\cf2 dialogRedaction}}}
+(QWidget *parent = {\cf17 nullptr});\par
+32     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAL" }{}}{\fldrslt {\cs37\ul\cf2 ~dialogRedaction}}}
+();\par
+36     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAM" }{}}{\fldrslt {\cs37\ul\cf2 getData}}}
+ (QString&, QString&, QString&, QString&, QString&, QString&);\par
+40     {\cf18 void} {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAN" }{}}{\fldrslt {\cs37\ul\cf2 editLabel}}}
+ (QString);\par
+41 \par
+42 {\cf17 private} slots:\par
+46     {\cf18 void} on_pushButtonOk_clicked();\par
+50     {\cf18 void} on_pushButtonCancel_clicked();\par
+51 \par
+52 {\cf17 private}:\par
+53     Ui::dialogRedaction *ui;\par
+54 \};\par
+55 \par
+56 {\cf21 #endif }{\cf20 // DIALOGREDACTION_H}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+mainwindow.h\par \pard\plain 
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 \par
+7 {\cf21 #ifndef MAINWINDOW_H}\par
+8 {\cf21 #define MAINWINDOW_H}\par
+9 \par
+10 {\cf21 #include <QMainWindow>}\par
+11 {\cf21 #include <QSqlDatabase>}\par
+12 {\cf21 #include <QSqlError>}\par
+13 {\cf21 #include <QSqlQuery>}\par
+14 {\cf21 #include <QSqlRecord>}\par
+15 \par
+16 {\cf21 #include <QDebug>}\par
+17 {\cf21 #include <QMessageBox>}\par
+18 {\cf21 #include <QSettings>}\par
+19 {\cf21 #include <QComboBox>}\par
+20 {\cf21 #include <QTableView>}\par
+21 {\cf21 #include "QStandardItemModel"}\par
+22 {\cf21 #include "QStandardItem"}\par
+23 \par
+24 {\cf21 #include <QList>}\par
+25 {\cf21 #include <QEvent>}\par
+26 {\cf21 #include <QTranslator>}\par
+27 {\cf21 #include <QDir>}\par
+28 {\cf21 #include <QLibraryInfo>}\par
+29 \par
+30 QT_BEGIN_NAMESPACE\par
+31 {\cf17 namespace }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAB" }{}}{\fldrslt {\cs37\ul\cf2 Ui}}}
+ \{ {\cf17 class }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow}}}
+; \}\par
+32 QT_END_NAMESPACE\par
+33 \par
+34 \par
+35 {\cf17 class }QActionGroup;\par
+36 \par
+40 {\cf17 class }{\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow}}}
+ : {\cf17 public} QMainWindow\par
+41 \{\par
+42     Q_OBJECT\par
+43 \par
+44 {\cf17 public}:\par
+49     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAP" }{}}{\fldrslt {\cs37\ul\cf2 MainWindow}}}
+(QWidget *parent = {\cf17 nullptr});\par
+53     {\field {\*\fldinst { HYPERLINK  \\l "AAAAAAAAAQ" }{}}{\fldrslt {\cs37\ul\cf2 ~MainWindow}}}
+();\par
+54 \par
+55 {\cf17 private} slots:\par
+59     {\cf18 void} on_actionConnect_triggered();\par
+63     {\cf18 void} on_actionAbout_the_author_triggered();\par
+67     {\cf18 void} on_actionDisconnect_triggered();\par
+71     {\cf18 void} on_buttonQuery_clicked();\par
+75     {\cf18 void} on_actionDelete_row_triggered();\par
+79     {\cf18 void} on_actionAdd_row_triggered();\par
+83     {\cf18 void} on_actionEdit_row_triggered();\par
+88     {\cf18 void} switchLanguage(QAction *action);\par
+89 \par
+90 {\cf17 private}:\par
+91     Ui::MainWindow *ui;\par
+92     QSqlDatabase db;\par
+96     {\cf18 void} enablingElements({\cf18 bool});\par
+100     {\cf18 void} readSettings();\par
+104     {\cf18 void} writeSettings();\par
+108     {\cf18 void} enablingEditing({\cf18 bool});\par
+112     {\cf18 void} notSelected();\par
+116     {\cf18 void} deleting({\cf18 int});\par
+121     {\cf18 bool} verify({\cf18 int});\par
+125     {\cf18 void} adding(QString, QString, QString, QString, QString, QString);\par
+129     {\cf18 void} editing(QString, QString, QString, QString, QString, QString, {\cf18 int});\par
+133     QTranslator appTranslator;\par
+137     QTranslator qtTranslator;\par
+141     QActionGroup *languageActionGroup;\par
+145     QString qmPath;\par
+149     {\cf18 void} createLanguageMenu();\par
+150 \};\par
+151 {\cf21 #endif }{\cf20 // MAINWINDOW_H}\par
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC\par 
+\pard\plain 
+{\tc \v \'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}
