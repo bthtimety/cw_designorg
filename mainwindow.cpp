@@ -87,13 +87,15 @@ void MainWindow::writeSettings() {
     QSettings settings("Home","cw_designorg");
     settings.beginGroup("MainWindowGeometry");
     settings.setValue("size", size());
-    settings.setValue("positin", pos());
+    settings.setValue("position", pos());
     settings.endGroup();
 }
 
 void MainWindow::enablingElements(bool b) {
     ui->comboBox->setEnabled(b);
     ui->buttonQuery->setEnabled(b);
+    ui->actionConnect->setEnabled(!b);
+    ui->actionDisconnect->setEnabled(b);
 }
 
 void MainWindow::on_buttonQuery_clicked()
